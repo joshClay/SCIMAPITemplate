@@ -12,12 +12,6 @@ namespace SCIMAPITemplate.Controllers
     public class UsersController : ApiController
     {
         [HttpGet]
-        public string GetUser()
-        {
-            return "blah";
-        }
-
-        [HttpGet]
         public HttpResponseMessage GetUser(HttpRequestMessage request, string id)
         {
             User user = new User();
